@@ -4,4 +4,6 @@ var Promise = new Promise(function(resolve,reject){
 });
 Promise.then((msg){
 	document.queryselector(".output").innerHTML = msg;
+}).catch((err){
+	document.queryselector(".output").innerHTML = err;
 })
