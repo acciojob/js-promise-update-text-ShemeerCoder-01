@@ -3,7 +3,7 @@ var Promise = new Promise(function(resolve,reject){
 	setTimeOut(resolve("Hello, world!"),1000);
 });
 Promise.then((msg)=>{
-	document.queryselector("#output").innerHTML = msg;
+	document.querySelector("#output").innerHTML = msg;
 }).catch((err)=>{
-	document.queryselector("#output").innerHTML = err;
+	document.querySelector("#output").innerHTML = err;
 })
